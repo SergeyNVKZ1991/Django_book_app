@@ -5,7 +5,9 @@
     <title>Привет Django!!!</title>
 </head>
 <body>
-    <h1>Вы на главной странице Django!!!</h1>
-    <h2>УРААА!</h2>
+    <h1>{{header}}</h1>
+    <p>Имя: {{user.name}} Возраст: {{user.age}}</p>
+    <p>Адрес: ул.{{addres.0}} д.{{addres.1}} кв.{{addres.2}}</p>
+    <p>Владеет языками: {{langs.0}}, {{langs.1}}</p>
 </body>
 </html>
