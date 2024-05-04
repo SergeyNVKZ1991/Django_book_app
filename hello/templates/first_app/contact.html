@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Привет Django!!!</title>
-</head>
-<body>
-    <h1>Контактные данные компании</h1>
-    <h2>"Интеллектуальные инофрмационные ситстемы"</h2>
-    <h3>{{ work }}</h3>
-    <h3>Адрес: г.Москва, ул.Короленко д.24</h3>
-</body>
-</html>
+{% extends "first_app/base.html" %}
+{% block title %}Контакты{% endblock title %}
+{% block header %}Контакты компании{% endblock header %}
+{% block content %}
+    Компания "Интеллектуальные информационные системы".
+    Адрес: г. Москва, ул. Короленко, д. 24
+    тел.: +7 999 999 99 99
+    e-meil: iis@yandex.ru
+    Это содержимое блока content. Этот текст находится
+    на странице contact.html, но он вставлен в базовый
+    шаблон - base.html, в блок с именем context.
+{% endblock content %}
